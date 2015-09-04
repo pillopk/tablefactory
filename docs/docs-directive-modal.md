@@ -36,7 +36,7 @@ Html syntax is:
 
 ###additionals
 (Array of Object) Objects array of type { field:'', width:'' } to show additional column in the table modal.
-Property 'field' is the property name of itams array, 'width' is the width of the column, in css string.
+Property 'field' is the property name of items array, 'width' is the width of the column, in css string.
 
 
 ###ng-model

@@ -1,9 +1,7 @@
 ﻿
 #Table Factory
 ------------------------------------------------------------------------
-TableFactory is an angular module '*ngTableFactory*' to create tables like this image:
-
-![TableFactory Sample](images/table-whole.png)
+TableFactory is an angular module '*ngTableFactory*' to create tables.
 
 See [getting started](getting-started.md) for usage samples.
 

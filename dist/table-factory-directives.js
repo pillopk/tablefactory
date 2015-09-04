@@ -1,4 +1,10 @@
-﻿angular.module("ngTableFactoryDirectives", ["ngSanitize", "ngTableFactory"])
+﻿/**
+ * @license Table factory v0.1.0
+ * Author: Torggler Paolo
+ * License: MIT
+ */
+ 
+angular.module("ngTableFactoryDirectives", ["ngSanitize", "ngTableFactory"])
 
     .directive("ngTableFactory", [
         "TableFactory", "TableFactoryUtility", "TableFactoryHtml",
