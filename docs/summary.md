@@ -1,0 +1,37 @@
+﻿
+#Table Factory
+------------------------------------------------------------------------
+TableFactory is an angular module '*ngTableFactory*' to create tables like this image:
+
+![TableFactory Sample](images/table-whole.png)
+
+See [getting started](detting-started.md) for usage samples.
+
+
+##Documentation
+
+- [Table Configuration](docs-configuration-table.md)
+- [Column Configuration](docs-configuration-column.md)
+- [Data Reader](docs-data-reader.md)
+- [Control Object Reference](docs-factory-reference.md)
+- [Table Events](docs-table-events.md)
+
+
+##Directives
+The module '*ngTableFactoryDirectives*' contains some directive implements TableFactory and Bootstrap.
+These directives can be used as code sample for TableFactory.
+
+- [Multiple Choice Dropdown](summary.md)
+- [Multiple Choice Table](summary.md)
+- [Data Table](summary.md)
+
+
+##Dependancies
+- TableFactory require '*angular-sanitize*'
+- TableFactoryDirectives require TableFactory and [bootstrap](http://getbootstrap.com/)
+
+> Documentation is still in progress...
+
+------------------------------------------------------------------------
+
+[back to top](#table-factory)

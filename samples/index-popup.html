@@ -1,0 +1,57 @@
+﻿<!DOCTYPE html>
+<html ng-app="testApp">
+<head>
+    <link href="lib/bootstrap/css/bootstrap.min.css" rel="stylesheet" />
+    <link href="lib/bootstrap/css/bootstrap-theme.min.css" rel="stylesheet" />
+
+    <script src="lib/jquery.min.js"></script>
+    <script src="lib/bootstrap/js/bootstrap.min.js"></script>
+    <script src="lib/underscore-min.js"></script>
+    <script src="lib/angular.min.js"></script>
+    <script src="lib/angular-sanitize.min.js"></script>
+
+    <script src="index-popup.js"></script>
+
+    <script src="table-factory/table-factory.js"></script>
+    <script src="table-factory/table-factory-directives.js"></script>
+
+    <meta charset="utf-8" />
+    <title>Angular Datagrid</title>
+</head>
+<body class="container-fluid" ng-controller="indexController">
+    <div ng-hide="loading">
+        <div class="page-header">
+            <h1>
+                <a href="index.html" class="glyphicon glyphicon-circle-arrow-left" style="font-size: 80%;"></a>
+                <span>Directives - Popup Selector</span>
+            </h1>
+        </div>
+        <div>
+            <button class="btn btn-xs btn-info" ng-click="showSingle()">Single Selection</button>
+            <span class="text-muted">{{modalSingle | json}}</span>
+            <div ng-modal-selector="" items="popupItems" ng-model="modalSingle" value-field="code" display-field="name" single="true" title="'Select Country'" show="modalSingleShow"></div>
+        </div>
+        <hr />
+        <div>
+            <button class="btn btn-xs btn-info" ng-click="showSingleAdd()">Single Selection with additional columns</button>
+            <span class="text-muted">{{modalSingleAdd | json}}</span>
+            <div ng-modal-selector="" items="popupItems" ng-model="modalSingleAdd" value-field="code" display-field="name" additionals="additionals1" single="true" title="'Select Country'" show="modalSingleAddShow"></div>
+        </div>
+        <hr />
+        <div>
+            <button class="btn btn-xs btn-info" ng-click="showMulti()">Multiple Selection</button>
+            <span class="text-muted">{{modalMulti | json}}</span>
+            <div ng-modal-selector="" items="popupItems" ng-model="modalMulti" value-field="code" display-field="name" title="'Select Countries'" show="modalMultiShow"></div>
+        </div>
+        <hr />
+        <div>
+            <button class="btn btn-xs btn-info" ng-click="showMultiAdd()">Multiple Selection with additional columns</button>
+            <span class="text-muted">{{modalMultiAdd | json}}</span>
+            <div ng-modal-selector="" items="popupItems" ng-model="modalMultiAdd" value-field="code" display-field="name" additionals="additionals2" title="'Select Countries'" show="modalMultiAddShow"></div>
+        </div>
+    </div>
+    <div ng-show="loading">
+        <h1 class="text-muted">loading...</h1>
+    </div>
+</body>
+</html>
