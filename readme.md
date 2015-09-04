@@ -3,7 +3,7 @@
 ------------------------------------------------------------------------
 TableFactory is an angular module '*ngTableFactory*' to create tables like this image:
 
-![TableFactory Sample](images/table-whole.png)
+![TableFactory Sample](docs/images/table-whole.png)
 
 - All data or paged
 - Header and footer visibility control
