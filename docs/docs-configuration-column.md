@@ -1,7 +1,5 @@
 ﻿[back to summary](summary.md)
 
-
-
 ##Column Configuration
 ------------------------------------------------------------------------
 The 'column' section of table options is an array that contains one object per column.

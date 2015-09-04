@@ -1,7 +1,5 @@
 ﻿[back to summary](summary.md)
 
-
-
 ##Data Reader
 ------------------------------------------------------------------------
 The data reader function specified in '*data.readerFn*' of the options

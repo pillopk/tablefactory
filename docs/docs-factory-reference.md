@@ -57,7 +57,7 @@ The parameters are two array of value from '*referenceField*' field of the rows.
 (boolean) function setRowSelection(refValue, selected, checked)
 ```
 With this function the row specified by its reference value ('*refValue*') is selected 
-or checked according with function parameters '*selected*' and '*checked*'.
+or checked according with function parameters.
 If '*selected*' or '*checked*' are null relative actual selection will be mantained.
 Return value indicates if table selection was modified.
 
@@ -77,7 +77,7 @@ This function register an event of the table, '*executeFn*' function parameter
 will be executed on event fire.
 Parameter of '*executeFn*' function vary on event type.
 The returned number can be used to remove registration.
-See [docs-table-events.md](docs-table-events.md) for events reference.
+See [Table Events](docs-table-events.md) for events reference.
 
 
 ###eventRemoveById

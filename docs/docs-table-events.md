@@ -4,7 +4,7 @@
 ------------------------------------------------------------------------
 This events names will be fired by factory during table usage.
 Must be used to event registration by the 
-[eventRegister()](docs-factory-reference.md#eventRegister) function.
+[eventRegister()](docs-factory-reference.md#eventregister) function.
 
 - [table-created](#table-created)
 - [data-request](#data-request)
