@@ -56,7 +56,6 @@ app.controller("indexController", ["$scope", "TableFactoryUtility", "TableFactor
                 http.get("data/countries.json").then(
                     function (result) {
                         countries = result.data;
-                        responseFn(countries, countries.length);
 
                         var part = filterData(request);
                         responseFn(part, countries.length);

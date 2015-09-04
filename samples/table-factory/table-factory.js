@@ -1,4 +1,10 @@
-﻿angular.module("ngTableFactory", [])
+﻿/**
+ * @license Table factory v0.1.0
+ * Author: Torggler Paolo
+ * License: MIT
+ */
+ 
+angular.module("ngTableFactory", [])
 
     .factory("TableFactory", [
         "TableFactoryUtility", "TableFactoryHtml", "TableFactoryEvents", function (ut, h, eventsfactory) {

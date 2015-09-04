@@ -1,6 +1,6 @@
 ﻿angular.module("ngTableFactoryDirectives", ["ngSanitize", "ngTableFactory"])
 
-    .directive("ngDataTableFactory", [
+    .directive("ngTableFactory", [
         "TableFactory", "TableFactoryUtility", "TableFactoryHtml",
         function (tableFactory, ut, h) {
 
@@ -119,7 +119,7 @@
                     selection: {
                         canSelect: true,
                         canSelectMulti: (scope.single !== true),
-                        canCheck: (scope.single !== true),
+                        canCheck: true,
                         canCheckMulti: (scope.single !== true),
                         selectionsLinked: true
                     },
