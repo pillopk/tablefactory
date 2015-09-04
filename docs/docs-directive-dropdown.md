@@ -10,7 +10,7 @@ Html syntax is:
 ```
 
 ###items
-(Array of Object) Items attributes is the data source of data table in the dropdown
+(Array of Object) Items attribute is the data source of data table in the dropdown
 
 
 ###single
@@ -26,8 +26,8 @@ Html syntax is:
 
 
 ###additionals
-(Array of Object) Array of object of type { field:'', width:'' } to show additional column in the table dropdown.
-Property 'field' is the property name of itams array, 'width' is the width of the column, in css string.
+(Array of Object) Objects array of type { field:'', width:'' } to show additional column in the table dropdown.
+Property 'field' is the property name of items array, 'width' is the width of the column, in css string.
 
 ###ng-model
 The angular proprietary directive ng-model is used to save dropdown selection 

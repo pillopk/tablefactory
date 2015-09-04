@@ -11,7 +11,7 @@ Html syntax is:
 
 
 ###options
-(Object) See [Table Factory configuration object](docs-configuration-table.md)
+(Object) Same as Table Factory [configuration object](docs-configuration-table.md)
 
 
 ###ng-model
