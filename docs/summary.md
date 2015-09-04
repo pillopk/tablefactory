@@ -21,9 +21,9 @@ See [getting started](getting-started.md) for usage samples.
 The module '*ngTableFactoryDirectives*' contains some directive implements TableFactory and Bootstrap.
 These directives can be used as code sample for TableFactory.
 
-- [Multiple Choice Dropdown](summary.md)
-- [Multiple Choice Table](summary.md)
-- [Data Table](summary.md)
+- [Dropdown Selector](docs-directive-dropdown.md)
+- [Modal Selector](docs-directive-modal.md)
+- [Data Table Factory](docs-directive-table.md)
 
 
 ##Dependancies
