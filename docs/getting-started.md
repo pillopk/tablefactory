@@ -1,4 +1,5 @@
-﻿
+﻿[back to summary](summary.md)
+
 ##Getting Started
 ------------------------------------------------------------------------
 TableFactory is an angular module to create tables, to add to your project
@@ -9,7 +10,7 @@ Require '*angular-sanitize.js*'.
 var app = angular.module("testApp", ["ngSanitize", "ngTableFactory"]);
 ```
 
-To create a new table call the '*create()*' method of the factory 
+To create a new table call the '*create()*' method of the factory; 
 table structure will be created and control object returned.
 The method must be call with valid htmlElement and 
 an [options](docs-configuration-table.md) object.
@@ -26,7 +27,7 @@ var options = {
 		{ field: "MarriageDate", caption: "Married", align: "center", width: "100px", formatter: marriedFormatter }
 	],
 	selection: {
-        hasSelections: true
+        canSelect: true
     },
 	data: {
 	    readerFn: dataReader

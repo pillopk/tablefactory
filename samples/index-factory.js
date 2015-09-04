@@ -6,7 +6,7 @@ app.controller("indexController", [
 
         var countries;
         var table;
-
+ 
         http.get("data/countries.json").then(
             function (result) {
                 countries = result.data;

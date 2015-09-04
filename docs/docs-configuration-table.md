@@ -28,29 +28,29 @@ must be unique across entire dataset and is required for any type of selection.
 
 ###columns
 (array) Is the object array where every item represent a column of the table. 
-See [column configuration](docs-column-configuration.md) for further specification.
+See [column configuration](docs-configuration-column.md) for further specification.
 
 ###noWarn
-(boolean) Suppress all warnings (no errors) displayed on console
+(boolean) Suppress all warnings (errors excluded) displayed on console
 
 
 ###data
-(object) See [data configuration](data-configuration) section for further specification.
+(object) See [data configuration](#data-configuration) section for further specification.
 
 ###selection
-(object) See [selection modes](selection-modes) section for further specification.
+(object) See [selection modes](#selection-modes) section for further specification.
 
 ###layout
-(object) See [table layout](table-layout) section for further specification.
+(object) See [table layout](#table-layout) section for further specification.
 
 ###css
-(object) See [css styles](css-styles) section for further specification.
+(object) See [css styles](#css-styles) section for further specification.
 
 ###icons
-(object) See [icons styles](icons-styles) section for further specification.
+(object) See [icons styles](#icons-styles) section for further specification.
 
 ###labels
-(object) See [text labels](text-labels) section for further specification.
+(object) See [text labels](#text-labels) section for further specification.
 
 
 
@@ -105,10 +105,10 @@ The values specified in this script are the defaults.
 
 ```javascript
 {
-    hasSelections: true,
-    isSelectionsMulti: false,
-    hasChecks: false,
-    isChecksMulti: false,
+    canSelect: true,
+    canSelectMulti: false,
+    canCheck: false,
+    canCheckMulti: false,
     selectionsLinked: false,
     clearOnPaging: false,
     clearOnSorting: false
@@ -116,19 +116,19 @@ The values specified in this script are the defaults.
 ```
 
 
-###hasSelections
+###canSelect
 When true the rows will be selectable (single selection). 
 See [Options-Css](#css-styles) to change selection style.
 
-###isSelectionsMulti
+###canSelectMulti
 When true can be select multiple rows.
 
-###hasChecks
+###canCheck
 When true a clickable checkbox will appear to the left of every row (single selection). 
 See [Options-Css](#css-styles) to change check icon style.
 
-###isChecksMulti
-When true can be checked multiple rows.
+###canCheckMulti
+When true can be checked multiple rows.1
 
 ###selectionsLinked
 When true, a single click on table rows will affect both selection and checkbox. 
@@ -263,4 +263,4 @@ The numbers present in curly braces are replaces for table values.
 
 ------------------------------------------------------------------------
 
-[back to top](#table-configurations) - [back to summary](summary.md)
+[back to top](#table-configuration) - [back to summary](summary.md)

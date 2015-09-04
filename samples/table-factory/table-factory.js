@@ -1497,8 +1497,8 @@
         };
 
         this.without = function (array, valueToCheck) {
-            if (self.is(array, "Array") === false) return false;
-            if (self.isNoU(valueToCheck)) return false;
+            if (self.is(array, "Array") === false) return [];
+            if (self.isNoU(valueToCheck)) return [];
 
             var result = [];
             for (var index = 0; index < array.length; index++) {
