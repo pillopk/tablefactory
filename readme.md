@@ -19,4 +19,9 @@ TableFactory is an angular module '*ngTableFactory*' to create tables like this 
 
 [Documentation](docs/summary.md) for a complete reference.
 
+###Available on NPM
+```
+npm i angular-table-factory
+```
+
 ------------------------------------------------------------------------
