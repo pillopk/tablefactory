@@ -1,0 +1,22 @@
+{
+  "version": "0.1.1005",
+  "name": "angular-table-factory",
+  "license": "MIT",
+  "author": {
+    "name": "Torggler Paolo",
+    "email": "paolo.torggler@gmail.com"
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/pillopk/tablefactory"
+  },
+  "homepage": "https://github.com/pillopk/tablefactory",
+  "keywords": [ "angular", "module", "bootstrap", "factory", "directive", "grid", "table", "pageable", "sortable", "selectable", "data" ],
+  "description": "TableFactory is an angular module to create (sortable/pageable/selectable) tables",
+  "private": false,
+  "dependencies": {
+    "jquery": "^2.0.0",
+    "angular": "^1.3.0"
+  },
+  "files": [ "license.md", "readme.md", "tablefactory" ]
+}
