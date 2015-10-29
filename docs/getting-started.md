@@ -34,7 +34,7 @@ var options = {
 	}
 };
 
-var table = tableFactory.create(element, options);
+var factory = tableFactory.create(element, options);
 ```
 
 The '*referenceField*' options field is required to identify uniquely data row, 
