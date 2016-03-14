@@ -14,6 +14,7 @@ Must be used to event registration by the
 - [row-checked](#row-checked)
 - [row-unchecked](#row-unchecked)
 - [row-clicked](#row-clicked)
+- [row-dbl-clicked](#row-clicked)
 - [clear-selection](#clear-selection)
 - [data-reload](#data-reload)
 - [page-changed](#page-changed)
@@ -67,11 +68,18 @@ Two parameters will be sended:
 
 
 ###row-clicked
-Raised when a row is clicked, no matter was selected, unselected, checked or unchecked.
+Raised when a row is clicked, no matter was selected, unselected. 
 Two parameters will be sended:
 - *record*: the data object of the row
 - *index*: index of the row selected (referenced to page)
 
+###row-dbl-clicked
+Raised when a row is double clicked, no matter was selected, unselected, checked or unchecked,
+checked or unchecked accordingly with options specified
+in [data](docs-configuration-table.md#selection-modes) section of configuration.
+Two parameters will be sended:
+- *record*: the data object of the row
+- *index*: index of the row selected (referenced to page)
 
 ###clear-selection
 Raised when the selection of the table is cleared, by the table button, refresh button, 

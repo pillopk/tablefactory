@@ -111,7 +111,8 @@ The values specified in this script are the defaults.
     canCheckMulti: false,
     selectionsLinked: false,
     clearOnPaging: false,
-    clearOnSorting: false
+    clearOnSorting: false,
+    activateDblClick: true
 }
 ```
 
@@ -128,7 +129,7 @@ When true a clickable checkbox will appear to the left of every row (single sele
 See [Options-Css](#css-styles) to change check icon style.
 
 ###canCheckMulti
-When true can be checked multiple rows.1
+When true can be checked multiple rows.
 
 ###selectionsLinked
 When true, a single click on table rows will affect both selection and checkbox. 
@@ -139,7 +140,8 @@ Current selection will be cleared after paging.
 ###clearOnSorting
 Current selection will be cleared after sorting.
 
-
+###activateDblClick
+Enable double click event on table row.
 
 
 ##Table Layout

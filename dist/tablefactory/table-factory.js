@@ -29,6 +29,7 @@ angular.module("ngTableFactory", [])
                     dataRequest: "data-request",
                     rowsCreated: "rows-created",
                     rowClicked: "row-clicked",
+                    rowDblClicked: "row-dbl-clicked",
                     rowChecked: "row-checked",
                     rowUnchecked: "row-unchecked",
                     rowSelected: "row-selected",
@@ -112,7 +113,8 @@ angular.module("ngTableFactory", [])
                             canCheckMulti: false,
                             selectionsLinked: false,
                             clearOnPaging: false,
-                            clearOnSorting: false
+                            clearOnSorting: false,
+                            activateDblClick: true
                         }),
                         layout: ut.defaults(gridOptions.layout, {
                             width: "100%",
@@ -439,6 +441,10 @@ angular.module("ngTableFactory", [])
 
                     if (options.selection.canSelect) {
                         $body.find("tr").click(rowClicked);
+                    }
+                    
+                    if (options.selection.activateDblClick) {
+                        $body.find("tr").dblclick(rowDblClicked);
                     }
 
                     if (options.selection.canCheck) {
@@ -977,6 +983,12 @@ angular.module("ngTableFactory", [])
                     e.stopPropagation();
                     var rowIndex = $(e.currentTarget).attr("row-id");
                     manageClick(parseInt(rowIndex), "row");
+                }
+                
+                function rowDblClicked(e){
+                    e.stopPropagation();
+                    var rowIndex = $(e.currentTarget).attr("row-id");
+                    events.raiseEvent(eventNames.rowDblClicked, options.data.rows[rowIndex], rowIndex);
                 }
 
                 function checkClicked(e) {
@@ -1623,4 +1635,3 @@ angular.module("ngTableFactory", [])
         return this;
 
     });
-
